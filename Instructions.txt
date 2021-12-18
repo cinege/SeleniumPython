@@ -1,0 +1,8 @@
+main <- Teszt.py
+BasePage <- Pageobjects
+
+The test does not contain any direct reference to the webdriver.
+The Pageobject does not contain any while, for, if block they are supposed to be in the test
+
+Example: TTC
+During the test the camel Minciketeve will be hibernated and activated again.

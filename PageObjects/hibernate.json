@@ -1,0 +1,39 @@
+{
+   "Title": "Hibernate",
+   "Locators": [
+      {
+         "name": "HIBERNATE_BUTTON",
+         "tag": "NAME",
+         "value": "hiber"
+      },
+      {
+         "name": "ACTIVATE_BUTTON",
+         "tag": "NAME",
+         "value": "dehiber"
+      }
+    ],
+   "Functions": [
+      {
+        "name": "hibernate",
+		"arguments": [],
+        "actions": [
+		{
+	        "name": "hibernate",
+                "method": "click",
+                "locator": "HIBERNATE_BUTTON"
+		}
+	]
+      },
+      {
+        "name": "activate",
+		"arguments": [],
+        "actions": [
+		{
+	        "name": "dehibernate",
+                "method": "click",
+                "locator": "ACTIVATE_BUTTON"
+		}
+	]
+      }
+    ]
+}

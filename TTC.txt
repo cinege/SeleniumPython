@@ -1,0 +1,28 @@
+Open page: 
+https://teveclub.hu
+pageobject loginpage
+login
+user: Minciteve
+pw: gyereide
+assert loginpage loaded
+pageobject myteve
+mehet click
+hibernálás click
+assert ébren van
+aludj el
+hibernálás click
+felébresztés
+ébresztő gomb
+
+driver = self.driver
+driver.get("https://teveclub.hu/")
+driver.find_element_by_id("focusme").click()
+driver.find_element_by_id("focusme").clear()
+driver.find_element_by_id("focusme").send_keys("Minciteve")
+driver.find_element_by_name("pass").clear()
+driver.find_element_by_name("pass").send_keys("gyereide")
+driver.find_element_by_xpath("//input[@type='image']").click()
+driver.find_element_by_xpath(u"//img[@alt='Hibernálom / felolvasztom a tevémet!']").click()
+driver.find_element_by_name("hiber").click()
+driver.find_element_by_xpath(u"//img[@alt='Hibernálom / felolvasztom a tevémet!']").click()
+driver.find_element_by_name("dehiber").click()

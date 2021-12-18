@@ -1,0 +1,52 @@
+{
+   "Title": "Login",
+   "Locators": [
+      {
+         "name": "USERNAME_FIELD",
+         "tag": "ID",
+         "value": "focusme"
+      },
+      {
+         "name": "PASSWORD_FIELD",
+         "tag": "NAME",
+         "value": "pass"
+      },
+	  {
+         "name": "LOGIN_BUTTON",
+         "tag": "XPATH",
+         "value": "//input[@type='image']"
+      }
+    ],
+    "Functions": [
+      {
+        "name": "login",
+		"arguments": [
+                   "URL",
+                   "USERNAME",
+                   "PASSWORD"
+                ],
+        "actions": [
+		    {
+			    "method": "openurl",
+                "locator": "",
+                "argument_variable": "URL"
+			},
+			{
+			    "method": "fill",
+                "locator": "USERNAME_FIELD",
+                "argument_variable": "USERNAME"
+			},
+			{
+			    "method": "fill",
+                "locator": "PASSWORD_FIELD",
+                "argument_variable": "PASSWORD"
+			},
+			{
+			    "method": "click",
+                "locator": "LOGIN_BUTTON",
+                "argument_variable": ""
+			}
+		]
+      }
+    ]
+}

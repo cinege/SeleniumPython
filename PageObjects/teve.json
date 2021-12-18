@@ -1,0 +1,23 @@
+{
+   "Title": "Teve",
+   "Locators": [
+      {
+         "name": "HIBERNATE_BUTTON",
+         "tag": "XPATH",
+         "value": "//img[@alt='Hibernálom / felolvasztom a tevémet!']"
+      }
+    ],
+    "Functions": [
+      {
+        "name": "clickhibernate",
+		"arguments": [],
+        "actions": [
+		    {
+			    "method": "click",
+                "locator": "HIBERNATE_BUTTON",
+                "argument_variable": ""
+			}
+		]
+      }
+    ]
+}
